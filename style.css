@@ -1,0 +1,155 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f4f6f8;
+    color: #222;
+    padding-bottom: 40px;
+}
+
+header {
+    background: #2563eb;
+    color: white;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+main {
+    width: 95%;
+    max-width: 1100px;
+    margin: 30px auto;
+    display: grid;
+    gap: 28px;
+}
+
+section {
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 4px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+button[type="submit"] {
+    background: #2563eb;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #1e4fd1;
+}
+
+#incompleteBookList,
+#completeBookList {
+    display: grid;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+[data-testid="bookItem"] {
+    background: #fafafa;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: 0.2s;
+}
+
+[data-testid="bookItem"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+[data-testid="bookItemTitle"] {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+[data-testid="bookItemAuthor"],
+[data-testid="bookItemYear"] {
+    font-size: 14px;
+    color: #555;
+}
+
+[data-testid="bookItem"] div {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+[data-testid="bookItemIsCompleteButton"] {
+    background: #22c55e;
+    color: white;
+}
+
+[data-testid="bookItemDeleteButton"] {
+    background: #ef4444;
+    color: white;
+}
+
+[data-testid="bookItemEditButton"] {
+    background: #f59e0b;
+    color: white;
+}
+
+[data-testid="bookItem"] button:hover {
+    opacity: 0.85;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section:first-child,
+    section:nth-child(2) {
+        grid-column: span 2;
+    }
+}
