@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="id" data-theme="day">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Rak Buku Dava</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Young+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main class="stage">
+            <div class="room" id="room">
+                <div class="f back">
+                    <div class="win">
+                        <div class="sky"></div>
+                        <div class="skyn"></div>
+                        <div class="sun"></div>
+                        <div class="moon"></div>
+                        <div class="cl"></div>
+                        <div class="cl b"></div>
+                        <div class="hills"></div>
+                        <div class="glare"></div>
+                    </div>
+
+                    <div class="sill"></div>
+
+                    <div class="lamp"></div>
+
+                    <div class="lampw">
+                        <div class="wire"></div>
+                        <div class="shade"></div>
+                        <div class="bulb"></div>
+                        <button
+                            class="cord"
+                            id="sw"
+                            role="switch"
+                            aria-checked="false"
+                            aria-label="Tarik tali lampu untuk ganti siang atau malam"
+                        ></button>
+                    </div>
+                    <div class="shelf" id="shelf"></div>
+                    <div class="base"></div>
+                </div>
+
+                <div class="f floor">
+                    <div class="patch"></div>
+                    <div class="pool"></div>
+                </div>
+                <div class="f left"></div>
+                <div class="f right"></div>
+                <div class="f ceil"></div>
+            </div>
+        </main>
+
+        <button class="pan" id="pan">Geser: jendela / rak</button>
+
+        <div class="desk" id="desk" hidden role="dialog" aria-modal="true" aria-label="Buku terbuka">
+            <button class="x" id="x">Tutup</button>
+
+            <div class="bk" id="bk">
+                <div class="pg pl"></div>
+                <div class="pg pr">
+                    <button
+                        class="rib"
+                        id="rib"
+                        aria-label="Pita pembatas: tarik untuk membaca review"
+                        aria-pressed="false"
+                    ></button>
+                </div>
+
+                <div class="flip">
+                    <div class="fr" id="fr" role="button" tabindex="0" aria-label="Buka buku">
+                        <div class="ct" id="ct"></div>
+                        <div class="ca" id="ca"></div>
+                    </div>
+
+                    <div class="fb">
+                        <p class="bl" id="bl"></p>
+                    </div>
+                </div>
+
+                <div class="note" id="note">
+                    <div class="nh">
+                        <h3 class="lt" id="lt"></h3>
+                        <p class="la" id="la"></p>
+                        <p class="ls" id="ls"></p>
+                    </div>
+
+                    <p class="rv" id="rev"></p>
+                </div>
+            </div>
+
+            <div class="cap" id="cap"></div>
+        </div>
+
+        <script src="books.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
