@@ -6,7 +6,7 @@
     r      review singkat dari kamu
     c      warna punggung buku (hex)
     k      warna tulisan di punggung buku (hex)
-  Lebar dan tinggi buku di rak dihitung otomatis dari panjang judul.
+    Lebar dan tinggi buku di rak dihitung otomatis dari panjang judul.
 */
 
 const BOOKS = [
